@@ -13,6 +13,7 @@ List::List(const List & other)
 }
 List::~List()
 {
+	cout << "\ndestructor LIST\n\n";
 	while (size)
 	{
 		pop();

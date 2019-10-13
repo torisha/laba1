@@ -7,12 +7,14 @@
 #include<fstream>
 Keeper::Keeper()
 {
+	cout << "\nKEEPER!!!!\n\n";
 	d = new Deque;
 	l = new List;
 	s = new Stack;
 }
 Keeper::~Keeper()
 {
+	cout << "\ndestructor KEEPER\n\n";
 	delete d;
 	delete l;
 	delete s;

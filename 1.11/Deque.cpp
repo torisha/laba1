@@ -13,6 +13,7 @@ Deque::Deque(const Deque & other)
 }
 Deque::~Deque()
 {
+	cout << "\ndestructor DEQUE\n\n";
 	while (size)
 	{
 		pop();//pop back

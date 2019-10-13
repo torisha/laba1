@@ -18,6 +18,7 @@ Stack::Stack(const Stack & other)
 }
 Stack::~Stack()
 {
+	cout << "\ndestructor STACK\n\n";
 	while (size)
 	{
 		pop();//pop back

@@ -22,7 +22,7 @@ int main()
 		cout << "3) Вывод на экран" << endl << endl;
 		cout << "4) Удалить структуру" << endl << endl;
 		cout << "5) Очистить файлы" << endl << endl;
-		cout << "5) Выход" << endl << endl;
+		cout << "6) Выход" << endl << endl;
 		cout << "***********************" << endl << endl;
 		cout << "Введите команду: ";
 		cin >> number;

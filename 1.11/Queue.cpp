@@ -33,6 +33,7 @@ Queue::Queue(const Queue & other)
 }
 Queue::~Queue()
 {
+	cout << "\ndestructor QUEUE\n\n";
 	while (size)
 	{
 		pop();
