@@ -52,7 +52,7 @@ public:
 
 	void Show(int n)
 	{
-			keeper[n]->show();	
+		keeper[n]->show();		
 	}
 
 	void Clear(int n)
@@ -60,30 +60,17 @@ public:
 		keeper[n]->clear();
 	}
 
-	void Write(int n)
-	{
-		keeper[n]->write_f();
-	}
+	
 
 	void Fill(int n, int quantity)
 	{
 		keeper[n]->fill(quantity);	
 	}
 	
-	void Write();//записывает все в файлы
-	void Dell(); //очищает файлы
-	void Read();
+	void Write_F();//записывает все в файлы
+	void Dell_F(); //очищает файлы
+	void Read_F();
 
-/*//с целой структурой
-	void create_el();//создать и записать в файл или загрузить из файла
-	void show_el();//сначала создать или загрузить инфу из файла
-	//(показывает не содержание файла!)
 
-	void dell_el();//файлы не трагает
-	void edit();//сохраняет в файл
-	//работа с файлами
-	void write();//записывает в файл всю структуру
-	void read();//читает из файла
-	void dell();//очищает файл*/
 	
 };
