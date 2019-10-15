@@ -9,22 +9,68 @@
 class Keeper
 {
 private:
-	Queue* s;
 	Queue* l;
+	Queue* s;
 	Queue* d;
+
+	Queue* keeper[3];
+	
 public:
+	
 	Keeper();
 	~Keeper();
 
-	//с целой структурой
-	void create_el();//создать и записать в файл или загрузить из файла
-	void show_el();//сначала создать или загрузить инфу из файла
-	//(показывает не содержание файла!)
+	void PushBack(int dat, int n) //dat это данные, n это номер структуры с которой работаем
+	{	
+			keeper[n]->push(dat);	
+	}
 
-	void dell_el();//файлы не трагает
-	void edit();//сохраняет в файл
-	//работа с файлами
-	void write();//записывает в файл всю структуру
-	void read();//читает из файла
-	void dell();//очищает файл
+	void PushFront(int dat, int n)
+	{
+		keeper[n]->push_front(dat);
+	}
+
+	void InsertAt(int dat, int index, int n)
+	{
+		keeper[n]->insert(dat, index);
+	}
+
+	void RemAt(int index, int n)
+	{
+		keeper[n]->removeAt(index);
+	}
+
+	void PopFront(int n)
+	{
+		keeper[n]->pop();
+	}
+
+	void PopBack(int n)
+	{
+		keeper[n]->pop_back();
+	}
+
+	void Show(int n)
+	{
+		keeper[n]->show();		
+	}
+
+	void Clear(int n)
+	{
+		keeper[n]->clear();
+	}
+
+	
+
+	void Fill(int n, int quantity)
+	{
+		keeper[n]->fill(quantity);	
+	}
+	
+	void Write_F();//записывает все в файлы
+	void Dell_F(); //очищает файлы
+	void Read_F();
+
+
+	
 };

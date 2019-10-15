@@ -76,6 +76,7 @@ void Stack::show()
 			number--;
 			cout << temp->GetData() << " ";
 		}
+		cout << endl;
 	}
 	else
 	{

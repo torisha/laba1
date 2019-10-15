@@ -18,4 +18,7 @@ public:
 	void show() override;
 	void clear() override;
 	void write_f() override;
+
+	void insert(int data, int index) override { cout << "\n\n!!! В деке нет такой функции !!!\n\n"; }
+	void removeAt(int index) override{ cout << "\n\n!!! В деке нет такой функции !!!\n\n"; }
 };

@@ -9,8 +9,8 @@ private:
 	int size;
 	Node *last;//last через прев
 protected:
-	void push_front(int data) override {};
-	void pop_back() override {};
+	void push_front(int data) override { cout << "\n\n!!! В стеке нет такой функции !!!\n\n"; };
+	void pop_back() override { cout << "\n\n!!! В стеке нет такой функции !!!\n\n"; };
 	void SetLast(Node* n) { last = n; }
 	Node* GetLast() { return last; }
 public:
@@ -23,4 +23,7 @@ public:
 	void show() override;
 	void clear() override;
 	void write_f() override;
+
+	void insert(int data, int index) override { cout << "\n\n!!! В стеке нет такой функции !!!\n\n"; }
+	void removeAt(int index) override { cout << "\n\n!!! В стеке нет такой функции !!!\n\n"; }
 };
