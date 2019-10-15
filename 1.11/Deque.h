@@ -8,7 +8,7 @@ private:
 	Node* right;
 	int size;
 public:
-	Deque() : left(nullptr), right(0), size(0) { cout << "\nDEQUE\n\n"; }
+	Deque() : left(nullptr), right(0), size(0) { /*cout << "\nDEQUE\n\n";*/ }
 	Deque(const Deque& other);
 	~Deque();
 	void pop() override;//pop front через next
@@ -18,4 +18,7 @@ public:
 	void show() override;
 	void clear() override;
 	void write_f() override;
+
+	void insert(int data, int index) override { cout << "\n\n!!! В деке нет такой функции !!!\n\n"; }
+	void removeAt(int index) override{ cout << "\n\n!!! В деке нет такой функции !!!\n\n"; }
 };

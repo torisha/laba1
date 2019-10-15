@@ -7,18 +7,20 @@
 #include<fstream>
 Keeper::Keeper()
 {
-	cout << "\nKEEPER!!!!\n\n";
-	d = new Deque;
+	//cout << "\nKEEPER!!!!\n\n";
 	l = new List;
 	s = new Stack;
+	d = new Deque;
+	
 }
 Keeper::~Keeper()
 {
-	cout << "\ndestructor KEEPER\n\n";
-	delete d;
+	//cout << "\ndestructor KEEPER\n\n";
 	delete l;
 	delete s;
+	delete d;
 }
+
 void Keeper::create_el()
 {
 	//сначала спросить будем ли мы загружать данные из файла или создадим новые

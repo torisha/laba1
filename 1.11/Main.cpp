@@ -13,7 +13,8 @@ int main()
 	srand(time(NULL));
 
 	Keeper keep;
-	char number;
+	int n = 1;
+	/*char number;
 	do
 	{
 		cout << "*********ÌÅÍŞ**********" << endl << endl;
@@ -62,7 +63,10 @@ int main()
 		}
 	}
 	while (number != '6');
+*/
 
+	keep.Fill(n,4);
+	keep.Show(n);
 
 	system("pause");
 	return 0;
