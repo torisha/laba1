@@ -13,10 +13,13 @@ private:
 	Queue* s;
 	Queue* d;
 
-	Queue* keeper[3]={ l,s,d};
+	Queue* keeper[3];
+	
 public:
+	
 	Keeper();
 	~Keeper();
+
 	void PushBack(int dat, int n) //dat это данные, n это номер структуры с которой работаем
 	{	
 			keeper[n]->push(dat);	
@@ -64,13 +67,14 @@ public:
 
 	void Fill(int n, int quantity)
 	{
-		//keeper[n]->fill(quantity);
-		l->fill(quantity);
+		keeper[n]->fill(quantity);	
 	}
 	
-	
+	void Write();//записывает все в файлы
+	void Dell(); //очищает файлы
+	void Read();
 
-	//с целой структурой
+/*//с целой структурой
 	void create_el();//создать и записать в файл или загрузить из файла
 	void show_el();//сначала создать или загрузить инфу из файла
 	//(показывает не содержание файла!)
@@ -80,5 +84,6 @@ public:
 	//работа с файлами
 	void write();//записывает в файл всю структуру
 	void read();//читает из файла
-	void dell();//очищает файл
+	void dell();//очищает файл*/
+	
 };

@@ -7,7 +7,7 @@ private:
 	int size;
 	Node* head;
 public:
-	List() : head(nullptr), size(0) {/* cout << "\nLIST\n\n";*/ }
+	List() : head(nullptr), size(0) {cout << "\nLIST\n\n"; }
 	List(const List& other);
 	~List();
 	void pop() override;

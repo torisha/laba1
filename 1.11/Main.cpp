@@ -65,8 +65,10 @@ int main()
 	while (number != '6');
 */
 
-	keep.Fill(n,4);
-	keep.Show(n);
+	//keep.Fill(n,4);
+	//keep.Show(n);
+	//keep.Write();
+	keep.Read();
 
 	system("pause");
 	return 0;

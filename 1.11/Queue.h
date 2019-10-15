@@ -16,7 +16,7 @@ protected:
 	void SetFirst(Node* p) { first = p; }
 	void SetLast(Node* w) { last = w; }
 public:
-	Queue() : size(0), first(nullptr), last(nullptr) { /*cout << "\nQUEUE\n\n";*/ }
+	Queue() : size(0), first(nullptr), last(nullptr) { cout << "\nQUEUE\n\n"; }
 	Queue(const Queue &other);
 	virtual ~Queue();
 	

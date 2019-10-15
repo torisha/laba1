@@ -14,7 +14,7 @@ protected:
 	void SetLast(Node* n) { last = n; }
 	Node* GetLast() { return last; }
 public:
-	Stack() : size(0), last(nullptr) { /*cout << "\nSTACK\n\n";*/ }
+	Stack() : size(0), last(nullptr) { cout << "\nSTACK\n\n"; }
 	Stack(const Stack &other);
 	~Stack();
 	void pop() override;//pop back
